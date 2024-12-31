@@ -1,34 +1,37 @@
 ---
-title: Basic Usage
-description: Basic usage of totxt
+title: Create Command
+description: Usage of totxt create
 ---
 
-## 💻 Basic Usage
+## Overview
 
-#### Simple Command
+### `create` - Convert Repository to Text File
 
-```bash
-python totxt.py /path/to/repository
-```
+Convert a local or GitHub repository into a `.txt` file containing its code and content.
 
-#### Direct conversion from GitHub
+## 💻 Usage
 
 ```bash
-python totxt.py "https://github.com/username/repository"
-# or
-python totxt.py "https://github.com/username/repository.git"
+totxt create <path> [options]
 ```
 
-## Advanced Options
+#### Options:
 
-#### Specify max file size in KB (default: 100 KB)
+- `path` (required): Path to your local repository or GitHub URL 🌍
+- `-m, --max-size <size>` (optional): Maximum file size in KB to include (default: 100 KB) 📏
+- `-o, --output <filename>` (optional): Output text file name (default: `<repo-name>_output.txt`) 🖋️
 
-python totxt.py /path/to/repository --max-size 200
+#### Examples:
 
-#### Custom output filename
-
-python totxt.py /path/to/repository --output custom_output.txt
-
-#### Enable verbose logging
-
-python totxt.py /path/to/repository --verbose
+- **Simple Usage**:
+  ```bash
+  totxt create <path>
+  ```
+- **Convert a GitHub Repo**:
+  ```bash
+  totxt create https://github.com/username/repository -o <your-directory-name>_output.txt
+  ```
+- **Convert a Local Repo**:
+  ```bash
+  totxt create /path/to/your/repo -o <your-directory-name>_output.txt
+  ```
