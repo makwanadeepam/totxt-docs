@@ -18,11 +18,11 @@ export default defineConfig({
         },
         {
           label: "Usage",
-          items: [{ label: "Usage", link: "/usage/basic-usage" }],
+          items: [{ label: "Create", link: "/create/create" }],
         },
         {
           label: "Advanced",
-          items: [{ label: "Recreate", link: "/advanced/recreate" }],
+          items: [{ label: "Recreate", link: "/recreate/recreate" }],
         },
         {
           label: "Development",

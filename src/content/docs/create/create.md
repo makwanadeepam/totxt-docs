@@ -5,11 +5,9 @@ description: Usage of totxt create
 
 ## Overview
 
-### `create` - Convert Repository to Text File
+The `create` command allows you to convert the folder and file structure to a `.txt` file. (For LLM ingestion)
 
-Convert a local or GitHub repository into a `.txt` file containing its code and content.
-
-## 💻 Usage
+## Usage
 
 ```bash
 totxt create <path> [options]
