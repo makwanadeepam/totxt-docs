@@ -17,7 +17,7 @@ export default defineConfig({
           ],
         },
         {
-          label: "Usage",
+          label: "Create",
           items: [{ label: "Create", link: "/create/create" }],
         },
         {
