@@ -12,5 +12,5 @@ description: How to install totxt
 ## Installation Steps
 
 ```bash
-npm i totxt
+npm i -g totxt
 ```
